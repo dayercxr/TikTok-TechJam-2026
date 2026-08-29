@@ -17,8 +17,23 @@ grid in the problem statement.
   (not just at test time), so the model learns invariance to these
   corruptions rather than memorizing clean-image artifacts only.
 
-## Setup
+## Project Structure
+```bash
+.
+├── LICENSE
+├── README.md
+├── requirements.txt
+└── src
+    ├── dataset.py
+    ├── infer.py
+    ├── model.py
+    ├── robustness.py
+    ├── train.py
+    └── transforms.py
 
+```
+
+## Setup
 ```bash
 pip install -r requirements.txt
 ```
