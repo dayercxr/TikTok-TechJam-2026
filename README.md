@@ -84,9 +84,12 @@ python infer.py --image-dir /path/to/images --checkpoint ../checkpoints/best.pt 
 - Robustness eval currently re-processes images per-transform serially;
   for larger validation sets this should be batched/parallelized.
 
+
 ## Team contributions
-Gerard Ting Wey Jay
-Tang Shi Rong
-Dayer Cher Xuanrui
-Raphael Ho Zi Jie
-Travis Lim Ee Hng
+• Gerard Ting Wey Jay
+• Tang Shi Rong
+• Dayer Cher Xuanrui
+• Raphael Ho Zi Jie
+• Travis Lim Ee Hng
+
+_Submission for TikTokTechJam 2026_
