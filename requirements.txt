@@ -1,4 +1,7 @@
-torch>=2.0
-torchvision>=0.15
-pillow
+fastapi
+uvicorn[standard]
+python-multipart
+Pillow
 numpy
+torch
+torchvision
