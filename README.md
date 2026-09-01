@@ -1,6 +1,4 @@
-# TikTok TechJam 2026: Track #5 (Robust Detection of AI-Generation Images Under Real-World Transformation)
-
-# AIGC Image Detector (Robustness-Focused Prototype)
+# Real ou Fake
 
 Binary classifier (real vs AI-generated) built for robustness under
 realistic post-processing: JPEG re-compression, blur, resize/thumbnailing,
@@ -17,8 +15,23 @@ grid in the problem statement.
   (not just at test time), so the model learns invariance to these
   corruptions rather than memorizing clean-image artifacts only.
 
-## Setup
+## Project Structure
+```bash
+.
+├── LICENSE
+├── README.md
+├── requirements.txt
+└── src
+    ├── dataset.py
+    ├── infer.py
+    ├── model.py
+    ├── robustness.py
+    ├── train.py
+    └── transforms.py
 
+```
+
+## Setup
 ```bash
 pip install -r requirements.txt
 ```
@@ -63,7 +76,7 @@ python infer.py --image-dir /path/to/images --checkpoint ../checkpoints/best.pt 
   frequency-domain branch (e.g. FFT/DCT features) could catch
   generator-specific artifacts that spatial-only CNNs miss.
 - Training-time augmentation uses the spec's parameter grid directly,
-  which risks overfitting to *these exact* corruption parameters rather
+  which risks over fitting to *these exact* corruption parameters rather
   than corruptions in general; a wider/continuous augmentation range
   would generalize better.
 - No calibration step (e.g. temperature scaling) — raw sigmoid outputs
@@ -71,6 +84,12 @@ python infer.py --image-dir /path/to/images --checkpoint ../checkpoints/best.pt 
 - Robustness eval currently re-processes images per-transform serially;
   for larger validation sets this should be batched/parallelized.
 
-## Team contributions
 
-_(fill in for team submissions)_
+## Team contributions
+• Gerard Ting Wey Jay
+• Tang Shi Rong
+• Dayer Cher Xuanrui
+• Raphael Ho Zi Jie
+• Travis Lim Ee Hng
+
+_Submission for TikTokTechJam 2026_
