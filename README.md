@@ -1,10 +1,9 @@
 # VeriFrame
 
 A full-stack prototype for classifying an uploaded image as AI-generated or likely real. 
-This repository contains both the UI layer & the model handling the detection and classification
+This repository contains the model handling the detection and classification
 
 ### Tech Stack
-* React + Vite
 * FastAPI
 * PyTorch
 
@@ -12,36 +11,17 @@ This repository contains both the UI layer & the model handling the detection an
 ### Project Structure
 ```bash
 .
-├── backend
-│   ├── requirements.txt
-│   └── src
-│       ├── main.py
-│       ├── model.py
-│       └── train.py
-├── frontend
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── public
-│   │   ├── favicon.svg
-│   │   └── icons.svg
-│   ├── README.md
-│   ├── src
-│   │   ├── App.css
-│   │   ├── App.tsx
-│   │   ├── assets
-│   │   │   ├── hero.png
-│   │   │   ├── react.svg
-│   │   │   └── vite.svg
-│   │   ├── index.css
-│   │   └── main.tsx
-│   ├── tsconfig.app.json
-│   ├── tsconfig.json
-│   ├── tsconfig.node.json
-│   └── vite.config.ts
+├── Dockerfile
+├── example.env
 ├── LICENSE
-└── README.md
+├── README.md
+├── requirements.txt
+└── src
+    ├── config.py
+    ├── main.py
+    ├── model.py
+    ├── schema.py
+    └── train.py
 ```
 
 ## Quick start
